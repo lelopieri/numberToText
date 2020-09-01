@@ -16,11 +16,6 @@ public class NumberToTextController {
 
 	@RequestMapping("{value}")
 	public TextValue numberToText(@PathVariable Integer value){
-		try {
 			return service.toText(value);
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
 	}
 }
