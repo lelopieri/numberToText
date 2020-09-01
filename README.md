@@ -22,7 +22,7 @@ The file numbertotext.war will be generated at _target_ folder under project hom
 ```
 java -jar target/numbertotext.war
 ``` 
-Now you can access the endpoint through the link <a href="http://localhost:8080/numbertotext/42" target="_blank">http://localhost:8080/numbertotext/42</a>
+Now you can access the endpoint through the URL <a href="http://localhost:3000/numbertotext/42" target="_blank">http://localhost:3000/numbertotext/42</a>
 
 [Using NumberToText](#using-numbertotext)
 
@@ -35,9 +35,9 @@ docker build -t desafio/numbertotext .
 
 #### Run Docker Image
 ```
-docker run -p 8080:8080 desafio/numbertotext
+docker run -p 3000:3000 desafio/numbertotext
 ``` 
-Now you can access the endpoint through the link <a href="http://localhost:8080/numbertotext/42" target="_blank">http://localhost:8080/numbertotext/42</a>
+Now you can access the endpoint through the URL <a href="http://localhost:3000/numbertotext/42" target="_blank">http://localhost:3000/numbertotext/42</a>
 
 [Using NumberToText](#using-numbertotext)
 
@@ -52,6 +52,8 @@ http://SERVER_ADDRESS:8080/manager/html
 - Login using credentials of a user that has the role _manager-gui_
 - At session __DEPLOY__ use the option __WAR file to deploy__
 - Select the generated file from your local computer and press \<__DEPLOY__\>
+
+Now you can access the endpoint through the URL <a href="http://localhost:8080/numbertotext/42" target="_blank">http://localhost:8080/numbertotext/42</a>
 
 [Using NumberToText](#using-numbertotext)
 
