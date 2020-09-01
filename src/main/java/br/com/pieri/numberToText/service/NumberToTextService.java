@@ -2,7 +2,6 @@ package br.com.pieri.numberToText.service;
 
 import br.com.pieri.numberToText.enums.TextValueEnum;
 import br.com.pieri.numberToText.vo.TextValue;
-import com.sun.javaws.exceptions.InvalidArgumentException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,12 +10,12 @@ import java.util.List;
 @Service
 public class NumberToTextService {
 
-	public TextValue toText(Integer value) throws InvalidArgumentException {
+	public TextValue toText(Integer value) {
 		String text = translateNumberToText(value);
 		return new TextValue(text);
 	}
 
-	private String translateNumberToText(Integer value) throws InvalidArgumentException {
+	private String translateNumberToText(Integer value)  {
 
 //		this method suports from -999,999 up to 999,999, but
 		if(value < -99999 || value > 99999){
@@ -33,7 +32,7 @@ public class NumberToTextService {
 		}
 
 		if(localValue == 100) {
-			return "cem";
+			text +=  "cem";
 		}else if(localValue > 1000){
 			Integer thousands = localValue / 1000;
 			if(thousands == 1){

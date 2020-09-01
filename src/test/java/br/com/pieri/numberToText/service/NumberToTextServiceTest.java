@@ -83,6 +83,13 @@ class NumberToTextServiceTest {
 	}
 
 	@Test
+	public void minuts100Test() throws Exception {
+		Integer value = -100;
+		TextValue textValue = service.toText(value);
+		assertEquals("menos cem", textValue.getExtenso());
+	}
+
+	@Test
 	public void biggerThan100ATest() throws Exception {
 		Integer value = 101;
 		TextValue textValue = service.toText(value);

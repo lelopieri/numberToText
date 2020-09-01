@@ -13,8 +13,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>numberToText</name>
 	<description>Translate a value to text</description>
+	<packaging>war</packaging>
 
 	<properties>
+		<java.version>1.8</java.version>
 		<testcontainers.version>1.14.3</testcontainers.version>
 	</properties>
 
@@ -22,6 +24,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
