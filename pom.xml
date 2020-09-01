@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.pieri</groupId>
 	<artifactId>numberToText</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>numberToText</name>
 	<description>Translate a value to text</description>
 	<packaging>war</packaging>
@@ -63,6 +63,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>numbertotext</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
