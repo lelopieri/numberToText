@@ -22,6 +22,7 @@ The file numbertotext.war will be generated at _target_ folder under project hom
 ```
 java -jar target/numbertotext.war
 ``` 
+Now you can access the endpoint through the link <a href="http://localhost:8080/numbertotext/42" target="_blank">http://localhost:8080/numbertotext/42</a>
 
 [Using NumberToText](#using-numbertotext)
 
@@ -36,6 +37,7 @@ docker build -t desafio/numbertotext .
 ```
 docker run -p 8080:8080 desafio/numbertotext
 ``` 
+Now you can access the endpoint through the link <a href="http://localhost:8080/numbertotext/42" target="_blank">http://localhost:8080/numbertotext/42</a>
 
 [Using NumberToText](#using-numbertotext)
 
