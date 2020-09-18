@@ -38,6 +38,7 @@ public enum TextValueEnum {
 	QUINHENTOS(500, "quinhentos"),
 	SEISENTOS(600, "seiscentos"),
 	SETECENTOS(700, "setecentos"),
+	OITOCENTOS(800, "oitocentos"),
 	NOVECENTOS(900, "novecentos"),
 	MIL(1000, "mil");
 

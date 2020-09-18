@@ -118,6 +118,13 @@ class NumberToTextServiceTest {
 	}
 
 	@Test
+	public void exact820Test() throws Exception {
+		Integer value = 820;
+		TextValue textValue = service.toText(value);
+		assertEquals("oitocentos e vinte", textValue.getExtenso());
+	}
+
+	@Test
 	public void exact1000Test() throws Exception {
 		Integer value = 1000;
 		TextValue textValue = service.toText(value);
